@@ -1,0 +1,5 @@
+
+(executable
+ (name topconf)
+ (libraries containers lwt.unix cmdliner cohttp-lwt-unix yojson websocket-lwt-unix websocket-lwt-unix.cohttp)
+ (preprocess (pps lwt_ppx ppx_deriving_yojson)))
